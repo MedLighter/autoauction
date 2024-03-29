@@ -1,3 +1,5 @@
+import 'package:autoauction/pages/singin.dart';
+import 'package:autoauction/pages/singup.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -52,7 +54,10 @@ class _WelcomePageState extends ConsumerState<WelcomePage> {
                   SizedBox(
                     width: MediaQuery.of(context).size.width / 1.3,
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context).push(CupertinoPageRoute(
+                            builder: (BuildContext context) => const SingUnPage()));
+                      },
                       style: ButtonStyle(
                           backgroundColor:
                               MaterialStatePropertyAll(Colors.red.shade400),
@@ -70,10 +75,13 @@ class _WelcomePageState extends ConsumerState<WelcomePage> {
                   SizedBox(
                     width: MediaQuery.of(context).size.width / 1.3,
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context).push(CupertinoPageRoute(
+                            builder: (BuildContext context) => const SingInPage()));
+                      },
                       style: ButtonStyle(
                         shape:
-                        MaterialStateProperty.all<RoundedRectangleBorder>(
+                            MaterialStateProperty.all<RoundedRectangleBorder>(
                           RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(18.0),
                             side: const BorderSide(
