@@ -40,7 +40,7 @@ class CarSearchScreenState extends ConsumerState<CarSearchScreen>
     return Scaffold(
       appBar: AppBar(
         shape: const Border(bottom: BorderSide(width: 2, color: Colors.black)),
-        title: Image.asset("images/logo.png",
+        title: Image.asset("assets/logo.png",
             width: MediaQuery.of(context).size.width / 3),
         centerTitle: true,
       ),

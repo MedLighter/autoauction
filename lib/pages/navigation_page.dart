@@ -1,8 +1,8 @@
 import 'dart:io';
 
-import 'package:autoauction/pages/car_search_screen.dart';
-import 'package:autoauction/pages/favorite_screen.dart';
-import 'package:autoauction/pages/profile_screen.dart';
+import 'package:autoauction/pages/car_search.dart';
+import 'package:autoauction/pages/favorite.dart';
+import 'package:autoauction/pages/profile.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
