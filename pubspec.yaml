@@ -38,6 +38,7 @@ dependencies:
   flutter_riverpod: ^2.4.9
   flutter_animated_icons: ^1.0.1
   google_fonts: ^6.2.0
+  flutter_masked_text2: ^0.9.1
 
 dev_dependencies:
   flutter_test:
