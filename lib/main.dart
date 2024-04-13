@@ -1,4 +1,4 @@
-import 'package:autoauction/pages/welcome.dart';
+import 'package:autoauction/pages/pre_pages/welcome.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -20,14 +20,6 @@ class MyApp extends StatelessWidget {
           seedColor: Colors.white,
           brightness: Brightness.light,
         ),
-        // textTheme: TextTheme(
-        //   displayLarge: const TextStyle(
-        //       fontSize: 72, fontWeight: FontWeight.normal, color: Colors.black),
-        //   titleLarge: GoogleFonts.oswald(
-        //       fontSize: 30, fontStyle: FontStyle.italic, color: Colors.black),
-        //   bodyMedium: GoogleFonts.merriweather(color: Colors.black),
-        //   displaySmall: GoogleFonts.pacifico(color: Colors.black),
-        // ),
       ),
       debugShowCheckedModeBanner: false,
       home: const WelcomePage(),

@@ -1,19 +1,16 @@
-import 'package:autoauction/pages/singup.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/painting.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_masked_text2/flutter_masked_text2.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-class SingInPage extends ConsumerStatefulWidget {
-  const SingInPage({super.key});
+class SingUnPage extends ConsumerStatefulWidget {
+  const SingUnPage({super.key});
 
   @override
-  ConsumerState<SingInPage> createState() => _SingInPageState();
+  ConsumerState<SingUnPage> createState() => _SingUnPageState();
 }
 
-class _SingInPageState extends ConsumerState<SingInPage> {
+class _SingUnPageState extends ConsumerState<SingUnPage> {
   MaskedTextController number = MaskedTextController(mask: '+7 000 000-00-00');
   TextEditingController password = TextEditingController();
 
@@ -112,7 +109,7 @@ class _SingInPageState extends ConsumerState<SingInPage> {
                   },
                   child: const Center(
                       child: Text(
-                    "Войти",
+                    "Создать аккаунт",
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 16,

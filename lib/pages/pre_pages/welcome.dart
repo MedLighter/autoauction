@@ -1,8 +1,7 @@
-import 'package:autoauction/pages/singin.dart';
-import 'package:autoauction/pages/singup.dart';
+import 'package:autoauction/pages/pre_pages/singin.dart';
+import 'package:autoauction/pages/pre_pages/singup.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class WelcomePage extends ConsumerStatefulWidget {
