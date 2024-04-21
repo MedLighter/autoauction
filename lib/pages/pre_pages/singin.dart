@@ -22,6 +22,7 @@ class _SingInPageState extends ConsumerState<SingInPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       appBar: AppBar(
         title: const Text("Вход в аккаунт"),
       ),
@@ -99,26 +100,25 @@ class _SingInPageState extends ConsumerState<SingInPage> {
               const SizedBox(
                 height: 15,
               ),
-              Container(
-                decoration: BoxDecoration(
-                    color: Colors.red.shade400,
-                    borderRadius: const BorderRadius.all(Radius.circular(100))),
-                height: MediaQuery.of(context).size.height * 0.05,
+              SizedBox(
                 width: MediaQuery.of(context).size.width / 1.3,
-                child: InkWell(
-                  onTap: () {
+                child: ElevatedButton(
+                  onPressed: () {
                     Navigator.of(context).push(CupertinoPageRoute(
                         builder: (BuildContext context) => const SingUnPage()));
                   },
-                  child: const Center(
-                      child: Text(
-                    "Войти",
+                  style: ButtonStyle(
+                      backgroundColor:
+                      MaterialStatePropertyAll(Colors.red.shade400),
+                      foregroundColor:
+                      const MaterialStatePropertyAll(Colors.white)),
+                  child: const Text(
+                    "Создать аккаунт",
                     style: TextStyle(
-                      color: Colors.white,
                       fontSize: 16,
                       fontWeight: FontWeight.w400,
                     ),
-                  )),
+                  ),
                 ),
               ),
             ],
